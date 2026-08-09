@@ -1,0 +1,16 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\HIMANSHU\\Downloads\\mysql-connector-j-9.7.0\\mysql-connector-j-9.7.0\\mysql-connector-j-9.7.0.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "DSA.java/String.java",
+        "DSA.java/Sorting.java",
+        "DSA.java/BinarySearch.java",
+        "DSA.java/Arrays.java",
+        "DSA.java/ArrayList.java",
+        "DSA.java/2DArrays.java",
+        "DSA.java/Recursion.java"
+    ]
+}
