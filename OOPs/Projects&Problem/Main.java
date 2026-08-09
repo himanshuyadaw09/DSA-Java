@@ -15,6 +15,7 @@ public class Main{
 		y = sc.nextDouble();
 		a = sc.nextInt();
 		flage = sc.nextBoolean();
+		sc.close();
 
 		System.out.println("a = " + a);
 		System.out.println("x = " + x);
