@@ -1,22 +1,22 @@
 // import java.util.Arrays;
 
 public class SecondLargestElement {
-    public static void main(String[] args){
-        int[] arr = {2,3,3,5,6,3,6,6,3,10,15};
-        int maxx = arr[0];
-        int secMaxx = arr[0];
-        // int n = arr.length;
-        for( int val : arr){
-            if( val > maxx){
-                secMaxx = maxx;
-                maxx = val;
-            }else if(val > secMaxx){
-                secMaxx = val;
+    public static int getSecondLargest(int[] arr) {
+        int firstMax = Integer.MIN_VALUE, secMax = Integer.MIN_VALUE;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] > firstMax){
+                secMax = firstMax;
+                firstMax = arr[i];
+            }
+            else if(arr[i] > secMax && arr[i] != firstMax){
+                secMax = arr[i];
             }
         }
-        System.out.println("Largest Element: " + maxx);
-        System.out.println("Second Largest Element: " + secMaxx);
-        
+        return (secMax == Integer.MIN_VALUE)? -1:secMax;
+    }
+    public static void main(String[] args){
+        int[] arr = {2,3,3,5,6,3,6,6,3,10,15};
+        System.out.println(getSecondLargest(arr));
     }
     
 }
